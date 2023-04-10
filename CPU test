@@ -1,0 +1,19 @@
+import time
+
+start = time.perf_counter()
+
+# 模拟高 CPU 负载
+
+for _ in range(1000):
+
+    for _ in range(1000):
+
+        for _ in range(1000):
+
+            pass
+
+    time.sleep(0.01)
+
+end = time.perf_counter()
+
+print(f"程序执行时间：{end - start} 秒")
